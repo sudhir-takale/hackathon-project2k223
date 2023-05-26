@@ -1,5 +1,21 @@
+<?php
+
+
+session_start();
+if (isset($_SESSION['username'])) {
+    echo "Welcome " . $_SESSION['username'];
+
+} else {
+    header("Location: login.php");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
+
+
 
 <head>
     <meta charset="UTF-8">
@@ -38,15 +54,19 @@
             <button type="submit" class="btn btn-primary">Submit</button>
 
         </div>
+
     </form>
+
+
+    <button type="button" class="btn btn-primary " style = " margin-left:4%; width:20%;"><a style = "font-size:19px;font-weight:700;color:white; text-decoration: none; " href="study_form.php">Add Your Files</a></button>
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
 </body>
-<script>
-    function IoT() {
-        document.getElementById
-    }
-</script>
+
 
 </html>

@@ -223,9 +223,12 @@ if (!isset($_SESSION['username'])) {
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                        Visit our website and click on the "Sign Up" or "Create Account" button. You will usually find this option in the top right corner of the website.
+                            Visit our website and click on the "Sign Up" or "Create Account" button. You will usually
+                            find this option in the top right corner of the website.
 
-                        You will be redirected to the registration page. Fill out the required information, such as your name, email address, and password. Make sure to choose a strong password that includes a combination of letters, numbers, and special characters.
+                            You will be redirected to the registration page. Fill out the required information, such as
+                            your name, email address, and password. Make sure to choose a strong password that includes
+                            a combination of letters, numbers, and special characters.
                         </div>
                     </div>
                 </div>
@@ -241,15 +244,18 @@ if (!isset($_SESSION['username'])) {
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                        If you have forgotten your password or need to reset it for any reason, you can follow these steps to reset your password:
+                            If you have forgotten your password or need to reset it for any reason, you can follow these
+                            steps to reset your password:
 
-                        Go to the login page of our website.
+                            Go to the login page of our website.
 
-                        Look for the "Forgot Password" or "Reset Password" link, usually located near the login form. Click on that link.
+                            Look for the "Forgot Password" or "Reset Password" link, usually located near the login
+                            form. Click on that link.
 
-                        You will be redirected to the password reset page. Enter the email address associated with your account.
+                            You will be redirected to the password reset page. Enter the email address associated with
+                            your account.
 
-                        Click on the "Reset Password" or "Send Reset Link" button.
+                            Click on the "Reset Password" or "Send Reset Link" button.
                         </div>
                     </div>
                 </div>
@@ -265,13 +271,15 @@ if (!isset($_SESSION['username'])) {
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                        Our customer support team is here to assist you. Please reach out to us using the following contact details:
+                            Our customer support team is here to assist you. Please reach out to us using the following
+                            contact details:
 
-                        Customer Support Number: [Insert Customer Support Number]
+                            Customer Support Number: [Insert Customer Support Number]
 
-                        Our dedicated support team is available [Specify the hours of availability, such as "24/7" or specific business hours].
-                        Feel free to contact us with any questions, concerns, or inquiries you may have.
-                        We are here to provide you with prompt and reliable assistance.
+                            Our dedicated support team is available [Specify the hours of availability, such as "24/7"
+                            or specific business hours].
+                            Feel free to contact us with any questions, concerns, or inquiries you may have.
+                            We are here to provide you with prompt and reliable assistance.
                         </div>
                     </div>
                 </div>
@@ -286,12 +294,14 @@ if (!isset($_SESSION['username'])) {
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                        We appreciate your feedback and are committed to resolving any issues you may encounter. To provide feedback or report a problem,
-                        you can use one of the following methods:
+                            We appreciate your feedback and are committed to resolving any issues you may encounter. To
+                            provide feedback or report a problem,
+                            you can use one of the following methods:
 
-                       Feedback Form: Visit our website and navigate to the "Contact Us" or "Feedback" page.
-                       Fill out the feedback form with your name, email address, and a detailed description of your feedback or the problem you encountered.
-                       Click on the "Submit" or "Send" button to send us your feedback.
+                            Feedback Form: Visit our website and navigate to the "Contact Us" or "Feedback" page.
+                            Fill out the feedback form with your name, email address, and a detailed description of your
+                            feedback or the problem you encountered.
+                            Click on the "Submit" or "Send" button to send us your feedback.
                         </div>
                     </div>
                 </div>
@@ -306,11 +316,14 @@ if (!isset($_SESSION['username'])) {
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                        Protecting your privacy is important to us. We have implemented a privacy policy to outline how we collect, use, and protect your personal information.
-                        Here is an overview of our privacy policy:
+                            Protecting your privacy is important to us. We have implemented a privacy policy to outline
+                            how we collect, use, and protect your personal information.
+                            Here is an overview of our privacy policy:
 
-                        Information Collection: We may collect certain personal information from you when you interact with our website or services.
-                        This may include your name, email address, contact details, and other relevant information necessary to provide our services.
+                            Information Collection: We may collect certain personal information from you when you
+                            interact with our website or services.
+                            This may include your name, email address, contact details, and other relevant information
+                            necessary to provide our services.
                         </div>
                     </div>
                 </div>
@@ -324,8 +337,9 @@ if (!isset($_SESSION['username'])) {
                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                        Yes, protecting the security of your personal information is of utmost importance to us.
-                         We have implemented various security measures to safeguard your personal details and ensure their confidentiality.
+                            Yes, protecting the security of your personal information is of utmost importance to us.
+                            We have implemented various security measures to safeguard your personal details and ensure
+                            their confidentiality.
                         </div>
                     </div>
                 </div>
