@@ -43,9 +43,9 @@
 
 
                 <div class="info mb-3 " style="text-align: start;margin-left: 16%; font-weight: 500;font-size: 17px;">
-                    Name : Lorem ipsum Rerum perferendis consequuntur quas. <br>
-                    Tutor Name : Lorem consequuntur quas<br>
-                    Date : 23/12/2023<br>
+                    Name :"Coding Fundamentals: Building the Foundation of Programming"<br>
+                    Tutor Name : Learning Guru<br>
+                    Date : 23/12/2022<br>
 
 
 
@@ -71,9 +71,9 @@
             </li>
             <li class="list-group-item">
                 <div class="info mb-3 " style="text-align: start;margin-left: 16%; font-weight: 500;font-size: 17px;">
-                    Name : Lorem ipsum Rerum perferendis consequuntur quas. <br>
-                    Tutor Name : Lorem consequuntur quas<br>
-                    Date : 23/12/2023<br>
+                    Name :"English Grammar Essentials: Mastering Language Skills" <br>
+                    Tutor Name :Academic Mentor<br>
+                    Date : 11/10/2022<br>
 
 
 
@@ -86,9 +86,9 @@
             </li>
             <li class="list-group-item">
                 <div class="info mb-3 " style="text-align: start;margin-left: 16%; font-weight: 500;font-size: 17px;">
-                    Name : Lorem ipsum Rerum perferendis consequuntur quas. <br>
-                    Tutor Name : Lorem consequuntur quas<br>
-                    Date : 23/12/2023<br>
+                    Name :"History Unraveled: Understanding the Past for a Better Future" <br>
+                    Tutor Name :Knowledge Navigator<br>
+                    Date : 27/05/2023<br>
 
 
 
@@ -106,9 +106,9 @@
             </li>
             <li class="list-group-item">
                 <div class="info mb-3 " style="text-align: start;margin-left: 16%; font-weight: 500;font-size: 17px;">
-                    Name : Lorem ipsum Rerum perferendis consequuntur quas. <br>
-                    Tutor Name : Lorem consequuntur quas<br>
-                    Date : 23/12/2023<br>
+                    Name :"Mathematics Mastery: A Comprehensive Approach" <br>
+                    Tutor Name :Study Coach<br>
+                    Date : 23/12/2021<br>
 
 
 
@@ -121,10 +121,10 @@
             </li>
             <li class="list-group-item">
                 <div class="info mb-3 " style="text-align: start;margin-left: 16%; font-weight: 500;font-size: 17px;">
-                    Name : Lorem ipsum Rerum perferendis consequuntur quas. <br>
-                    Tutor Name : Lorem consequuntur quas<br>
+                    Name : Science Explorers: Unveiling the Wonders of the Natural World <br>
+                    Tutor Name :Educator Insights<br>
 
-                    Date : 23/12/2023<br>
+                    Date : 09/09/2021<br>
 
 
 
