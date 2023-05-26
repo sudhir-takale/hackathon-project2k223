@@ -1,3 +1,15 @@
+<?php
+
+
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header('location:login.php');
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +24,11 @@
 
 <body>
 
+    <?php
+    echo "welcome " . $_SESSION['username'] . " to Knowledge Point;";
 
+
+    ?>
 
 
     <nav>
@@ -20,11 +36,12 @@
             <a href="index.html">Knowledge Point</a>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href=study_material.html">Study Material</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="register.html">Register</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="feedback.php">Feedback</a></li>
+            <li><a href=study_material.php">Study Material</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="register.php">Register</a></li>
+            <li><a href="logout.php">Log Out</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -200,13 +217,23 @@
                     <h3 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Question 1
+                            How do I create an Account?
                         </button>
                     </h3>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Answer to Question 1
+                            Visit the website or application: Access the website or application where you want to create
+                            an account.
+
+                            Locate the registration or sign-up page: Find the registration or sign-up page on thesd
+
+
+                            Choose a username: Select a unique username that will represent your account.
+
+                            Enter your email address: Provide a valid email address that you have access to
+
+                            Set a password: Choose a strong and secure password to protect your account.
                         </div>
                     </div>
                 </div>
@@ -216,13 +243,17 @@
                     <h3 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Question 2
+                            How can I reset my password?
                         </button>
                     </h3>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Answer to Question 2
+                            Visit the Password Reset Page: Go to the website or application where you want to reset your
+                            password.
+
+                            Locate the Password Reset Functionality and Enter your Email Address: Find the password
+                            reset page and enter the email address associated with your account.
                         </div>
                     </div>
                 </div>
@@ -232,7 +263,7 @@
                     <h3 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Question 3
+                            What is your customer support number?
                         </button>
                     </h3>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
@@ -247,7 +278,7 @@
                     <h3 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Question 4
+                            How can I provide feedback or report a problem?
                         </button>
                     </h3>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
@@ -262,7 +293,7 @@
                     <h3 class="accordion-header" id="headingFive">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Question 2
+                            What is your privacy policy?
                         </button>
                     </h3>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
@@ -276,7 +307,7 @@
                     <h3 class="accordion-header" id="headingSix">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            Question 2
+                            Are my personal detais are secured?
                         </button>
                     </h3>
                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
@@ -287,6 +318,9 @@
                     </div>
                 </div>
             </div>
+
+
+
         </div>
 
 

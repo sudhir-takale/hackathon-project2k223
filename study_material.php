@@ -11,33 +11,7 @@
 </head>
 
 <body>
-<<<<<<< HEAD:subject.html
     <div style="background-color: antiquewhite; height: 55px;width: 100%;">
-=======
-    <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist"
-        style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab"
-                aria-selected="true">iot</button>
-        </li>
-        <li class=" nav-item" role="presentation">
-            <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab"
-                aria-selected="false">cloud</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab"
-                aria-selected="false">software engineering</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab"
-                aria-selected="false">system programming</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab"
-                aria-selected="false">natural language processing</button>
-        </li>
-    </ul>
->>>>>>> 0c4ffdf127beb48d9bc6a483f8abe1d7cfa4f367:study_material.html
 
 
         <h2 class="text-center mt-3">Available study material</h2>

@@ -1,11 +1,43 @@
+<?php
+include('database.php');
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $username = $_POST["username"];
+    $email = $_POST["email"];
+    $fullname = $_POST["fullname"];
+    $password = $_POST["password"];
+
+    $sql = "INSERT INTO users (username, email,name, password) VALUES ('$username', '$email', '$fullname', '$password' )";
+    $result = mysqli_query($conn, $sql);
+
+
+
+    if ($result === true) {
+        echo "<script>alert('Registration Successfull') </script>";
+        header("Location: login.php");
+
+    } else {
+        echo "Error: " . mysqli_error($conn);
+    }
+
+
+    mysqli_close($conn);
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html>
+
+
+
 
 <head>
     <title>Registration Form</title>
     <style>
         body {
-           margin-top:  11%;
+            margin-top: 11%;
 
         }
 
@@ -58,9 +90,8 @@
     <div style="display: flex;">
         <div class="container">
             <h2>Registration Form</h2>
-            <form>
+            <form action="register.php" method="POST">
                 <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
-
                 <input type="text" id="username" name="username" placeholder="username" required>
                 <input type="email" id="email" name="email" placeholder="Email" required>
                 <input type="password" id="password" name="password" placeholder="Password" required>
@@ -68,11 +99,12 @@
 
 
             </form>
-            <P style="float: right; text-decoration: none;">Already have account? <a href="login.html">Login</a></P>
+            <P style="float: right; text-decoration: none;">Already have account? <a href="login.php">Login</a></P>
         </div>
 
         <div>
-            <img style="width: 100%;" src="https://media.istockphoto.com/id/1312423107/vector/stealing-data-concept-flat-vector-illustration-online-registration-form-login-to-social.jpg?s=170667a&w=0&k=20&c=CPalLiPr3v3L0FoED18nVbucVjL_oKx2vTffsOXZTXU="
+            <img style="width: 100%;"
+                src="https://media.istockphoto.com/id/1312423107/vector/stealing-data-concept-flat-vector-illustration-online-registration-form-login-to-social.jpg?s=170667a&w=0&k=20&c=CPalLiPr3v3L0FoED18nVbucVjL_oKx2vTffsOXZTXU="
                 alt="">
         </div>
     </div>
