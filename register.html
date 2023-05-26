@@ -5,12 +5,16 @@
     <title>Registration Form</title>
     <style>
         body {
-            padding-top: 11%;
-            font-family: Arial, sans-serif;
+           margin-top:  11%;
+
+        }
+
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .container {
-            width: 300px;
+            width: 400px;
             height: 350px;
             margin: 0 auto;
             padding: 20px;
@@ -51,19 +55,26 @@
 </head>
 
 <body>
-    <div class="container">
-        <h2>Registration Form</h2>
-        <form>
-            <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+    <div style="display: flex;">
+        <div class="container">
+            <h2>Registration Form</h2>
+            <form>
+                <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
 
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <input type="text" id="username" name="username" placeholder="username" required>
-            <input type="password" id="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Register">
+                <input type="text" id="username" name="username" placeholder="username" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Register">
 
 
-        </form>
-        <P style="float: right; text-decoration: none;">already registerd <a href="login.html">login</a></P>
+            </form>
+            <P style="float: right; text-decoration: none;">Already have account? <a href="login.html">Login</a></P>
+        </div>
+
+        <div>
+            <img style="width: 100%;" src="https://media.istockphoto.com/id/1312423107/vector/stealing-data-concept-flat-vector-illustration-online-registration-form-login-to-social.jpg?s=170667a&w=0&k=20&c=CPalLiPr3v3L0FoED18nVbucVjL_oKx2vTffsOXZTXU="
+                alt="">
+        </div>
     </div>
 </body>
 

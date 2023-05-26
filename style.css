@@ -134,6 +134,7 @@ nav {
     margin-bottom: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 @media screen and (max-width: 768px) {
     .overlay {
         width: 90%;
@@ -159,6 +160,7 @@ nav {
     text-decoration: none;
     padding: 12px 20px;
 }
+
 .get-started a:hover {
     background-color: rgb(200, 14, 14);
     color: white;
@@ -219,12 +221,11 @@ nav {
 .event ul li {
     font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
+
 }
+
 .event ul li:hover {
     background-color: red;
     color: white;
-    box-shadow: 3px 8px 8px  black;
+    box-shadow: 3px 8px 8px black;
 }
-
-
