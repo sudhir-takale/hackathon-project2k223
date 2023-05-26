@@ -19,6 +19,8 @@ if (!isset($_SESSION['username'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <title>Home | Welcome to Knowledge Point </title>
 </head>
 
@@ -39,8 +41,14 @@ if (!isset($_SESSION['username'])) {
             <li><a href="index.php">Home</a></li>
             <li><a href="feedback.php">Feedback</a></li>
             <li><a href=study_material.php">Study Material</a></li>
-            <li><a href="login.php">Login</a></li>
+
+
+
             <li><a href="register.php">Register</a></li>
+            <li><a href="login.php">Login</a></li>
+
+
+
             <li><a href="logout.php">Log Out</a></li>
         </ul>
         <div class="burger">
@@ -74,17 +82,24 @@ if (!isset($_SESSION['username'])) {
         <div class="about-section container">
 
             <h2 class="text-center mt-5 bg-secondary " style="color: white;padding: 1%;">Who we are !</h2>
-            <p class="mt-3" style="font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, laborum saepe iure
-                delectus sequi
-                laboriosam aperiam beatae deserunt alias voluptatum expedita perferendis autem asperiores veritatis in
-                ipsam, voluptas quaerat nulla. Perspiciatis enim excepturi iste ratione. Cupiditate minus debitis
-                inventore fugiat ratione eius quisquam, tempora ullam Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Voluptates ratione obcaecati, in vitae voluptatibus corrupti, enim quasi error nostrum amet,Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum iusto aliquid recusandae quaerat
-                commodi excepturi quam ipsum ut, aut aspernatur cupiditate inventore.
-                reiciendis excepturi velit! Dolor voluptatibus eum pariatur praesentium aliquam officiis eveniet unde
-                perferendis sequi?.</p>
+            <p class="mt-3" style="font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">A
+                peer-to-peer online study material exchange website is a platform where students can share and exchange
+                educational resources with one another. These websites facilitate the sharing of study materials such as
+                lecture notes, textbooks, practice exams, and other relevant educational content. </br>
+
+                To maintain the quality and legality of shared materials, these websites often have moderation systems
+                in place. Users may report inappropriate or copyrighted content, and moderators review and remove such
+                materials as necessary.
+                Users can search and browse through the available resources based on subjects or keywords of interest.
+                They can download the materials they find useful and may have the option to rate and provide feedback on
+                the shared content. Some platforms also offer communication features like forums or messaging to
+                encourage collaboration and community building. Moderation systems are typically in place to ensure the
+                quality and legality of the shared materials.</br> It's important for users to be mindful of copyright
+                regulations when uploading and downloading content. Overall, peer-to-peer online study material exchange
+                websites provide a convenient and collaborative environment for students to access and share educational
+                resources.
+
+            </p>
 
 
 
@@ -364,21 +379,21 @@ if (!isset($_SESSION['username'])) {
 
 
 
-    <footer class="footer">
-        <div class="container2">
+    <footer class="footer bg-secondary p-2 ">
+        <div class="container2" style="height:125px">
             <div class="footer-content">
 
                 <div class="footer-section contact">
-                    <h2>Contact Us</h2>
-                    <p>Email: info@Knowledgepoint.com</p>
-                    <p>Phone: +1234567890</p>
+                    <h2 style="margin-left:62px;font-weight:700;">Contact Us</h2>
+                    <p style="color:whitesmoke; font-size:16px;font-weight:600;">Email: info@Knowledgepoint.com</p>
+                    <p style="color:whitesmoke; font-size:16px;font-weight:600;">Phone: +1234567890</p>
                 </div>
-                <div class="footer-section social">
-                    <h2>Follow Us</h2>
+                <div class="footer-section social ">
+                    <h2 style="margin-left:62px;font-weight:700;">Follow Us</h2>
                     <div class="social-icons ">
-                        <a href="images/facebook.png"><i class="fab fa-facebook-f"></i></a>
-                        <a href="images/Twitter.png"><i class="fab fa-twitter"></i></a>
-                        <a href="images/instagram.png"><i class="fab fa-instagram"></i></a>
+                        <img style="margin-right:12px" src="images/facebook.png" alt="">
+                        <img src="images/Twitter.png" style="margin-right:12px" alt="">
+                        <img src="images/instagram.png" style="margin-right:12px" alt="">
                     </div>
                 </div>
             </div>

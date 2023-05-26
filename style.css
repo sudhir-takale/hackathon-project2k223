@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 nav {
     display: flex;
 
@@ -29,7 +28,7 @@ nav {
     margin-left: 2px;
     margin-right: 22px;
     font-size: 19px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .nav-links li a {
@@ -110,6 +109,7 @@ nav {
 
 
 
+
 .container1 {
     position: relative;
     width: 100%;
@@ -161,10 +161,6 @@ nav {
     padding: 12px 20px;
 }
 
-.get-started a:hover {
-    background-color: rgb(200, 14, 14);
-    color: white;
-}
 
 .footer {
     background-color: #f4f4f4;

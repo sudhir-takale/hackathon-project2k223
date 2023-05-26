@@ -1,4 +1,17 @@
 <?php
+require('database.php');
+session_start();
+if (isset($_SESSION['username'])) {
+    echo "Welcome " . $_SESSION['username'];
+
+} else {
+    header("Location: login.php");
+}
+
+
+?>
+
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pdfFile = $_FILES["pdf_file"]["tmp_name"];
     $pdfName = $_FILES["pdf_file"]["name"];

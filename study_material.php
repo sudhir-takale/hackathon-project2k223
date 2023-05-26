@@ -1,21 +1,13 @@
 <?php
 
-
 session_start();
-if (isset($_SESSION['username'])) {
-    echo "Welcome " . $_SESSION['username'];
-
-} else {
+if (!isset($_SESSION['username'])) {
     header("Location: login.php");
+
 }
-
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
-
-
 
 <head>
     <meta charset="UTF-8">
@@ -27,10 +19,15 @@ if (isset($_SESSION['username'])) {
 </head>
 
 <body>
+
+    <?php
+    require('navbar.php');
+    ?>
     <div style="background-color: antiquewhite; height: 55px;width: 100%;">
 
 
-        <h2 class="text-center mt-3">Available study material</h2>
+        <h3 class="text-center mt-3 bg-secondary p-2" style="color:red;box-shadow:3px 4px 5px black;">Available study
+            material</h3>
 
     </div>
 
@@ -58,7 +55,9 @@ if (isset($_SESSION['username'])) {
     </form>
 
 
-    <button type="button" class="btn btn-primary " style = " margin-left:4%; width:20%;"><a style = "font-size:19px;font-weight:700;color:white; text-decoration: none; " href="study_form.php">Add Your Files</a></button>
+    <button type="button" class="btn btn-primary" style=" margin-top:1%; margin-left:4%; width:20%;"><a
+            style="font-size:19px;font-weight:700;color:white; text-decoration: none;" href="study_form.php">Add Your
+            Files</a></button>
 
 
 
