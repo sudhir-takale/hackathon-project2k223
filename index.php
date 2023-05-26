@@ -376,9 +376,9 @@ if (!isset($_SESSION['username'])) {
                 <div class="footer-section social">
                     <h2>Follow Us</h2>
                     <div class="social-icons ">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="images/icons8-twitter.svg"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="images/facebook.png"><i class="fab fa-facebook-f"></i></a>
+                        <a href="images/Twitter.png"><i class="fab fa-twitter"></i></a>
+                        <a href="images/instagram.png"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
