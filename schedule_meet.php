@@ -52,7 +52,7 @@
                 </div>
 
                 <video controls style="width:600px; height: 200px;">
-                    <source src="" type="video/mp4">
+                    <source src="video1.mp4" type="video/mp4">
 
                 </video>
 
