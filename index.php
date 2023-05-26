@@ -1,6 +1,6 @@
 <?php
 
-
+require('database.php');
 session_start();
 
 if (!isset($_SESSION['username'])) {
@@ -219,30 +219,25 @@ if (!isset($_SESSION['username'])) {
 
     </section>
 
-<hr>
+    <hr>
 
 
-<section>
-
-<!-- This is a Questions sessions -->
-<div class="container"><form method="POST" action="">
-        <label for="sender">Sender:</label><br>
-        <input type="text" id="sender" name="sender" required><br><br>
-
-        <label for="recipient">Recipient:</label><br>
-        <input type="text" id="recipient" name="recipient" required><br><br>
-
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-
-        <input type="submit" value="Send Message">
-    </form>
-
-</div>
+    <!-- <section> -->
+  
+        <!-- This is a Questions sessions -->
+    <!-- <div class="container w-50 p-4" style="border:2px solid black;">
+            <h4 class="text-center">Ask A questions </h4>
+            <form method="POST" action="">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Enter Question</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ask a question">
+                </div>
 
 
+        </div>
+        -->
 
-</section>
+    <!-- </section> -->
 
     <section class=" mt-4 p-2">
 

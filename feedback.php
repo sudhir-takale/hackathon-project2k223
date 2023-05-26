@@ -52,7 +52,7 @@
           <div class="form-group">
             <label for="email" style="font-weight:700; font-size:16px;">Enter Toturial Name..</label>
             <input type="email" class="form-control" name="tutname"
-              placeholder="Enter Tutorial no for which you want give feedback." required>
+              placeholder="Enter Name of Tutorial" required>
           </div>
 
           <div class="form-group">
