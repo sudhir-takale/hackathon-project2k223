@@ -325,7 +325,7 @@ if (!isset($_SESSION['username'])) {
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
                         Yes, protecting the security of your personal information is of utmost importance to us.
-                         We have implemented various security measures to safeguard your personal details and ensure their confidentiality.
+                        We have implemented various security measures to safeguard your personal details and ensure their confidentiality.
                         </div>
                     </div>
                 </div>
@@ -362,9 +362,9 @@ if (!isset($_SESSION['username'])) {
                 <div class="footer-section social">
                     <h2>Follow Us</h2>
                     <div class="social-icons ">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="images/icons8-twitter.svg"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="images/facebook.png"><i class="fab fa-facebook-f"></i></a>
+                        <a href="images/Twitter.png"><i class="fab fa-twitter"></i></a>
+                        <a href="images/instagram.png"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
