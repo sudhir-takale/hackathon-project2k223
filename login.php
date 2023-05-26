@@ -37,6 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
+
   <link rel="stylesheet" href="login.css">
 </head>
 
@@ -55,16 +56,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </div>
       <div class="form-group">
         <button type="submit">Login</button>
-        <p style="float: right;font-size: small;">Not a Member? <a href="register.html">Register</a></p>
+        <p style="float: right;font-size: small;">Not a Member? <a href="register.php">Register</a></p>
       </div>
 
     </form>
   </div>
 
-  <div>
 
 
-  </div>
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>

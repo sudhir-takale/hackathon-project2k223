@@ -28,6 +28,10 @@
 
 <body>
 
+    <?php
+    require('navbar.php');
+    ?>
+
     <div style="display: flex; justify-content: space-around; ">
         <button type="button" class="btn btn-primary text-center mt-5  "><a style="color: white;text-decoration: none;"
                 href="https://meet.google.com">Click here to Schedule a new Meeting</a></button>

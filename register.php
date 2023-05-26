@@ -87,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
-    <div style="display: flex;">
+    <div style="display: flex;justify-content:space-around;">
         <div class="container">
             <h2>Registration Form</h2>
             <form action="register.php" method="POST">

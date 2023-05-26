@@ -54,12 +54,18 @@ if (!isset($_SESSION['username'])) {
 
     </form>
 
+    <div>
 
-    <button type="button" class="btn btn-primary" style=" margin-top:1%; margin-left:4%; width:20%;"><a
-            style="font-size:19px;font-weight:700;color:white; text-decoration: none;" href="study_form.php">Add Your
-            Files</a></button>
+        <button type="button" class="btn btn-primary" style=" margin-top:1%; margin-left:4%; width:20%;"><a
+                style="font-size:19px;font-weight:700;color:white; text-decoration: none;" href="study_form.php">Add
+                Your
+                Files</a></button>
 
+        <button type="button" class="btn btn-primary" style=" margin-top:1%; margin-left:14%; width:20%;"><a
+                style="font-size:19px;font-weight:700;color:white; text-decoration: none;" href="schedule_meet.php">All
+                Video Files</a></button>
 
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

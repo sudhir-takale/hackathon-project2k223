@@ -40,7 +40,7 @@ if (!isset($_SESSION['username'])) {
         <ul class="nav-links">
             <li><a href="index.php">Home</a></li>
             <li><a href="feedback.php">Feedback</a></li>
-            <li><a href=study_material.php">Study Material</a></li>
+            <li><a href=study_material.php>Study Material</a></li>
 
 
 
@@ -81,8 +81,8 @@ if (!isset($_SESSION['username'])) {
 
         <div class="about-section container">
 
-            <h2 class="text-center mt-5 bg-secondary " style="color: white;padding: 1%;">Who we are !</h2>
-            <p class="mt-3" style="font-size: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">A
+            <h2 class="text-center mt-5 bg-secondary " style="color: white;padding: 1%;">About us </h2>
+            <p class="mt-3" style="font-size: 16px;font-weight:600;font-family:Arial, Helvetica, sans-serif">A
                 peer-to-peer online study material exchange website is a platform where students can share and exchange
                 educational resources with one another. These websites facilitate the sharing of study materials such as
                 lecture notes, textbooks, practice exams, and other relevant educational content. </br>
@@ -128,7 +128,8 @@ if (!isset($_SESSION['username'])) {
 
 
                                     Date : <span>27/05/2023</span>
-                                    Time :<span> 10:00 AM</span>
+                                    Time :<span> 10:00 AM</span> </br>
+                                    link :<span> https://</span>
 
                                     </p>
                                 </div>
@@ -143,8 +144,8 @@ if (!isset($_SESSION['username'])) {
 
 
                                     Date : <span>27/05/2023</span>
-                                    Time :<span> 10:00 AM</span>
-
+                                    Time :<span> 10:00 AM</span> </br>
+                                    link :<span> https://</span>
                                     </p>
                                 </div>
 
@@ -158,8 +159,8 @@ if (!isset($_SESSION['username'])) {
 
 
                                     Date : <span>27/05/2023</span>
-                                    Time :<span> 10:00 AM</span>
-
+                                    Time :<span> 10:00 AM</span> </br>
+                                    link :<span> https://</span>
                                     </p>
                                 </div>
 
@@ -173,8 +174,8 @@ if (!isset($_SESSION['username'])) {
 
 
                                     Date : <span>27/05/2023</span>
-                                    Time :<span> 10:00 AM</span>
-
+                                    Time :<span> 10:00 AM</span> </br>
+                                    link :<span> https://</span>
                                     </p>
                                 </div>
 
@@ -188,7 +189,8 @@ if (!isset($_SESSION['username'])) {
 
 
                                     Date : <span>27/05/2023</span>
-                                    Time :<span> 10:00 AM</span>
+                                    Time :<span> 10:00 AM</span> </br>
+                                    link :<span> https://</span>
                                     </p>
                                 </div>
 
@@ -217,7 +219,30 @@ if (!isset($_SESSION['username'])) {
 
     </section>
 
+<hr>
 
+
+<section>
+
+<!-- This is a Questions sessions -->
+<div class="container"><form method="POST" action="">
+        <label for="sender">Sender:</label><br>
+        <input type="text" id="sender" name="sender" required><br><br>
+
+        <label for="recipient">Recipient:</label><br>
+        <input type="text" id="recipient" name="recipient" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Send Message">
+    </form>
+
+</div>
+
+
+
+</section>
 
     <section class=" mt-4 p-2">
 
