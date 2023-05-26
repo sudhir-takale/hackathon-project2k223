@@ -159,10 +159,11 @@ nav {
     text-decoration: none;
     padding: 12px 20px;
 }
-.get-started:hover {
+.get-started a:hover {
     background-color: rgb(200, 14, 14);
     color: white;
 }
+
 .footer {
     background-color: #f4f4f4;
     padding: 20px;
@@ -225,7 +226,5 @@ nav {
     color: white;
     box-shadow: 3px 8px 8px  black;
 }
-.event ul {
-    /* box-shadow: 3px 4px 4px black; */
-}
+
 
