@@ -1,3 +1,38 @@
+<?php
+include('database.php');
+session_start();
+if (!isset($_SESSION['username'])) {
+  header('location:login.php');
+}
+
+
+
+if (isset($_POST['submit'])) {
+
+  $tutname = $_POST["tutname"];
+  $fullname = $_POST["fullname"];
+  $rating = $_POST["rating"];
+  $comment = $_POST["comment"];
+
+  $sql = "INSERT INTO feedback (name,rating,tutorname,comment) VALUES ('$fullname', '$rating', '$tutname', '$comment' )";
+  $result = mysqli_query($conn, $sql);
+
+
+
+  if ($result === true) {
+    echo "<script>alert('Feedback Submitted Successfully!') </script>";
+
+
+
+  } else {
+    echo "Error: " . mysqli_error($conn);
+  }
+
+
+  mysqli_close($conn);
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -22,19 +57,10 @@
 
   <div class="main" style="display:flex;">
 
-
-
     <div class="mt-5">
-
 
       <img class="mt-5" style="width:55%; margin-left:95px; margin-top:55px" src="images/feedback.jpg" alt="">
     </div>
-
-
-
-
-
-
 
     <div class=" mt-5 " style="width: 350%; margin-right:40px;">
       <!-- <h1 class="text-center bg-secondary p-2" style="color:white; border-radius:9px;">Feedback Form</h1> -->
@@ -42,17 +68,16 @@
         <form class="border p-4" action="feedback.php" method="POST">
           <div class="form-group">
             <label for="name" style="font-weight:700; font-size:16px;">Enter Your Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            <input type="text" class="form-control" id="name" name="fullname" placeholder="Enter your name" required>
           </div>
           <div class="form-group">
-            <label for="email" style="font-weight:700; font-size:16px;">Rate the Session</label>
+            <label for="text" style="font-weight:700; font-size:16px;">Rate the Session</label>
             <input type="number" class="form-control" min="1" max="5" name="rating"
               placeholder="Rate session from 1 to 5" required>
           </div>
           <div class="form-group">
             <label for="email" style="font-weight:700; font-size:16px;">Enter Toturial Name..</label>
-            <input type="email" class="form-control" name="tutname"
-              placeholder="Enter Name of Tutorial" required>
+            <input type="text" class="form-control" name="tutname" placeholder="Enter Name of Tutorial" required>
           </div>
 
           <div class="form-group">
@@ -60,20 +85,12 @@
             <textarea class="form-control" name="comment" placeholder="Enter your message" rows="3"></textarea>
           </div class="submit">
           <div class="d-flex justify-content-center mt-3">
-            <button type="submit" class="btn btn-primary w-50">Submit</button>
+            <button type="submit" name="submit" class="btn btn-primary w-50">Submit</button>
           </div>
         </form>
       </div>
     </div>
-
-
-
-
-
   </div>
-
-
-
 </body>
 
 </html>

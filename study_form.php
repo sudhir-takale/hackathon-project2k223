@@ -1,3 +1,37 @@
+<?php
+
+require('database.php');
+session_start();
+$username = $_SESSION["username"];
+if (!isset($_SESSION["username"])) {
+    header("Location: login.php");
+    exit();
+}
+if (isset($_POST['submit'])) {
+    $filename = $_FILES['inputfile']['name'];
+    $name = $_POST['filename'];
+    $tempfile = $_FILES['inputfile']['tmp_name'];
+    $folder = "uploads/" . $filename;
+
+    if (move_uploaded_file($tempfile, $folder)) {
+        $sql = "INSERT INTO studymaterial (name, data, username) VALUES ('$name', '$folder','$username')";
+        $result = mysqli_query($conn, $sql);
+
+        if ($result) {
+            echo "File uploaded successfully.";
+        } else {
+            echo "Error: " . mysqli_error($conn);
+        }
+    } else {
+        echo "File not uploaded.";
+    }
+}
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -22,17 +56,18 @@
             <h3 style="margin-top: 55px; text-align: center;">Upload Your File</h3>
             <form enctype="multipart/form-data" action="study_form.php" method="POST">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Type subject</label>
+                    <label for="exampleInputEmail1" class="form-label">Enter subject Name</label>
                     <input type="text" class="form-control" name="filename" id="exampleInputEmail1"
-                        aria-describedby="emailHelp">
+                        placeholder="Enter subject Name" aria-describedby="emailHelp">
 
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">choose file</label>
-                    <input type="file" name="inputfile" class="form-control" id="exampleInputPassword1">
+                    <label for="exampleInputPassword1" class="form-label">Choose file</label>
+                    <input type="file" name="inputfile" class="form-control" id="exampleInputPassword1"
+                        placeholder="choose pdf files only">
                 </div>
 
-                <button type="submit" class="btn btn-primary" style="margin-left: 45%;
+                <button type="submit" name="submit" class="btn btn-primary" style="margin-left: 45%;
                         margin-bottom: 50px;">Submit</button>
             </form>
         </div>

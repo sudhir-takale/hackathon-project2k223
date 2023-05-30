@@ -26,11 +26,7 @@ if (!isset($_SESSION['username'])) {
 
 <body>
 
-    <?php
-    echo "welcome " . $_SESSION['username'] . " to Knowledge Point;";
 
-
-    ?>
 
 
     <nav>
@@ -40,7 +36,7 @@ if (!isset($_SESSION['username'])) {
         <ul class="nav-links">
             <li><a href="index.php">Home</a></li>
             <li><a href="feedback.php">Feedback</a></li>
-            <li><a href=study_material.php>Study Material</a></li>
+            <li><a href="study_material.php">Study Material</a></li>
 
 
 
@@ -64,7 +60,13 @@ if (!isset($_SESSION['username'])) {
         <div class="container1">
             <img src="images/home images.jpg" alt="Background Image">
             <div class="overlay">
-                <h1>Welcome to Knowledge Point</h1>
+                <h1>
+                    <?php
+                    echo "welcome <span  > " . $_SESSION['username'] . " </span>  to Knowledge Point;";
+
+
+                    ?>
+                </h1>
                 <button class="get-started"><a href="#mainsection">Get Started</a></button>
             </div>
         </div>
@@ -223,8 +225,8 @@ if (!isset($_SESSION['username'])) {
 
 
     <!-- <section> -->
-  
-        <!-- This is a Questions sessions -->
+
+    <!-- This is a Questions sessions -->
     <!-- <div class="container w-50 p-4" style="border:2px solid black;">
             <h4 class="text-center">Ask A questions </h4>
             <form method="POST" action="">

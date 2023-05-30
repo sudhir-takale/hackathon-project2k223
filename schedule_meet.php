@@ -34,9 +34,9 @@
 
     <div style="display: flex; justify-content: space-around; ">
         <button type="button" class="btn btn-primary text-center mt-5  "><a style="color: white;text-decoration: none;"
-                href="https://meet.google.com">Click here to Schedule a new Meeting</a></button>
+                href="https://meet.google.com/">Click here to Schedule a new Meeting</a></button>
         <button type="button" class="btn btn-primary text-center mt-5"><a style="color: white;text-decoration: none;"
-                href="https://googlemeet.com">Click here to join Meeting</a></button>
+                href="https://meet.google.com/">Click here to join Meeting</a></button>
 
     </div>
 
@@ -55,7 +55,7 @@
 
                 </div>
 
-                <video controls style="width:600px; height: 200px;">
+                <video controls muted autoplay style="width:600px; height: 200px;">
                     <source src="video1.mp4" type="video/mp4">
 
                 </video>
@@ -83,10 +83,18 @@
 
                 </div>
 
-                <video controls style="width:600px; height: 200px;">
+                <video controls muted autoplay style="width:600px; height: 200px;">
                     <source src="" type="video/mp4">
 
                 </video>
+                <div id="rating-container">
+                    <span class="rating-star" data-rating="1">&#9733;</span>
+                    <span class="rating-star" data-rating="2">&#9733;</span>
+                    <span class="rating-star" data-rating="3">&#9733;</span>
+                    <span class="rating-star" data-rating="4">&#9733;</span>
+                    <span class="rating-star" data-rating="5">&#9733;</span>
+                    <p id="selected-rating"></p>
+                </div>
             </li>
             <li class="list-group-item">
                 <div class="info mb-3 " style="text-align: start;margin-left: 16%; font-weight: 500;font-size: 17px;">
@@ -98,10 +106,17 @@
 
                 </div>
 
-                <video controls style="width:600px; height: 200px;">
+                <video controls muted autoplay style="width:600px; height: 200px;">
                     <source src="" type="video/mp4">
 
                 </video>
+                <div id="rating-container">
+                    <span class="rating-star" data-rating="1">&#9733;</span>
+                    <span class="rating-star" data-rating="2">&#9733;</span>
+                    <span class="rating-star" data-rating="3">&#9733;</span>
+                    <span class="rating-star" data-rating="4">&#9733;</span>
+                    <span class="rating-star" data-rating="5">&#9733;</span>
+                </div>
                 <div class="container bg-secondary">
                     <span id="rateMe2" class="empty-stars"></span>
                 </div>
@@ -118,10 +133,17 @@
 
                 </div>
 
-                <video controls style="width:600px; height: 200px;">
+                <video controls muted autoplay style="width:600px; height: 200px;">
                     <source src="" type="video/mp4">
 
                 </video>
+                <div id="rating-container">
+                    <span class="rating-star" data-rating="1">&#9733;</span>
+                    <span class="rating-star" data-rating="2">&#9733;</span>
+                    <span class="rating-star" data-rating="3">&#9733;</span>
+                    <span class="rating-star" data-rating="4">&#9733;</span>
+                    <span class="rating-star" data-rating="5">&#9733;</span>
+                </div>
             </li>
             <li class="list-group-item">
                 <div class="info mb-3 " style="text-align: start;margin-left: 16%; font-weight: 500;font-size: 17px;">
@@ -134,10 +156,17 @@
 
                 </div>
 
-                <video controls style="width:600px; height: 200px;">
+                <video controls muted autoplay style="width:600px; height: 200px;">
                     <source src="" type="video/mp4">
 
                 </video>
+                <div id="rating-container">
+                    <span class="rating-star" data-rating="1">&#9733;</span>
+                    <span class="rating-star" data-rating="2">&#9733;</span>
+                    <span class="rating-star" data-rating="3">&#9733;</span>
+                    <span class="rating-star" data-rating="4">&#9733;</span>
+                    <span class="rating-star" data-rating="5">&#9733;</span>
+                </div>
             </li>
         </ul>
 

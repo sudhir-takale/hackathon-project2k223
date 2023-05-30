@@ -1,11 +1,20 @@
 <?php
-
+require('database.php');
 session_start();
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION["username"])) {
     header("Location: login.php");
-
+    exit(); // Make sure to exit after redirecting
 }
+
+$username = $_SESSION["username"];
+
+
+// Retrieve files from the database
+$sql = "SELECT * FROM studymaterial WHERE username = '$username'";
+$result = mysqli_query($conn, $sql);
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +28,14 @@ if (!isset($_SESSION['username'])) {
 </head>
 
 <body>
+    <?php if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $selectedOption = $_POST["dropdown"];
+        echo "Selected option: " . $selectedOption;
+
+    }
+
+    ?>
+
 
     <?php
     require('navbar.php');
@@ -26,20 +43,21 @@ if (!isset($_SESSION['username'])) {
     <div style="background-color: antiquewhite; height: 55px;width: 100%;">
 
 
-        <h3 class="text-center mt-3 bg-secondary p-2" style="color:red;box-shadow:3px 4px 5px black;">Available study
+        <h3 class="text-center mt-3 bg-secondary p-2" style="color:red;box-shadow:3px 4px 5px black;">Available
+            study
             material</h3>
 
     </div>
 
-    <form action="">
+    <form action="study_material.php" action="POST">
         <div class="sorting " style="float: right; margin-right: 3%;">
             <label for="cars">Sort by:</label>
-            <select name="cars" id="cars" style="width: 130px;height: 38px; margin-top: 4%;">
+            <select name="cars" name="dropdown" id="cars" style="width: 130px;height: 38px; margin-top: 4%;">
                 <option hidden value="volvo">Select Subject </option>
-                <option value="volvo">IOT </option>
-                <option value="saab">ML</option>
-                <option value="opel">Cloud</option>
-                <option value="opel">java</option>
+                <option value="volvo" name="iot">IOT </option>
+                <option value="saab" name="ml">ML</option>
+                <option value="opel" name="cloud">Cloud</option>
+                <option value="opel" name="java">java</option>
             </select>
 
             <select name="cars" id="cars" style="width: 130px;height: 38px; margin-top: 4%;">
@@ -47,7 +65,7 @@ if (!isset($_SESSION['username'])) {
                 <option value="volvo">PDF</option>
                 <option value="saab">Video</option>
                 <option value="opel">Presentation</option>
-            </select>
+            </select> 
             <button type="submit" class="btn btn-primary">Submit</button>
 
         </div>
@@ -66,7 +84,38 @@ if (!isset($_SESSION['username'])) {
                 Video Files</a></button>
 
     </div>
+    <div style="border:2px solid black; margin-top:4%;">
+        <h2 style="text-align: center;" class="bg-secondary mt-3 p-2">File Listing</h2>
+        <table style="width:75%; height:auto;margin-left:30%; margin-top:5%;">
+            <tr class="mt-5">
+                <th style="font-size: 19px; margin-right:23px">File Name</th>
+                <th style="font-size: 19px; margin-left:235px">Download Link</th>
+            </tr>
+            <?php
 
+
+
+            // Retrieve files from the database
+            $sql = "SELECT * FROM studymaterial WHERE username = '$username'";
+            $result = mysqli_query($conn, $sql);
+
+            while ($row = mysqli_fetch_assoc($result)) {
+                $name = $row['name'];
+                $filepath = $row['data'];
+                ?>
+                <tr class="mt-5 mb-5 ">
+                    <td class="mt-5 mb-5 p-2">
+                        <?php echo $name; ?>
+                    </td>
+                    <td class="mt-5 m-5 p-4"><a href="<?php echo $filepath; ?>" target="_blank"><button type="button"
+                                class="btn btn-primary">Download</button></a></td>
+                </tr>
+                <?php
+            }
+            mysqli_close($conn);
+            ?>
+        </table>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
